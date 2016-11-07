@@ -5,11 +5,11 @@
 #' @import htmlwidgets
 #'
 #' @export
-vizicitiesway <- function(message, width = NULL, height = NULL, elementId = NULL) {
+vizicitiesway <- function(width = NULL, height = NULL, elementId = NULL) {
 
   # forward options using x
   x = list(
-    message = message
+    message = c(40.739940, -73.988801)
   )
 
   # create widget
