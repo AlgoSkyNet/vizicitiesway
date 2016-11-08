@@ -1,6 +1,14 @@
 dependencies:
+ - name: three
+   version: 9999
+   src: "htmlwidgets/lib"
+   script: three.min.js
+ - name: TweenMax
+   version: 1.18.2
+   src: "htmlwidgets/lib"
+   script: TweenMax.min.js
  - name: vizicities
    version: 0.3
    src: "htmlwidgets/lib"
    script: vizicities.min.js
-   stylesheet: "vizicities_style.css"
+   stylesheet: vizicities_style.css
