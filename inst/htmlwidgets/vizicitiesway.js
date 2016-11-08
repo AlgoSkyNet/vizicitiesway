@@ -17,14 +17,18 @@ HTMLWidgets.widget({
 
        // London
 			var coords = [51.5052, -0.0308];
+			console.log(coords);
+			console.log(el.id);
 
+
+
+
+/*
 			var world = VIZI.world('world', {
 			  skybox: false,
 			  postProcessing: false
 			}).setView(coords);
-
-
-
+*/
 
       },
 

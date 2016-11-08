@@ -1,6 +1,6 @@
 dependencies:
  - name: three
-   version: 9999
+   version: 77
    src: "htmlwidgets/lib"
    script: three.min.js
  - name: TweenMax
