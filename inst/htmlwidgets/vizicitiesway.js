@@ -19,14 +19,18 @@ HTMLWidgets.widget({
 
       // London
 			var coords = [x.lat, x.lng];
+			var _skybox = (x.sun === true ? true : false);
+
+			console.log(x.sun);
+			console.log(_skybox);
 
 			var world = VIZI.world(el.id, {
-			  skybox: false,
+			  skybox: _skybox,
 			  postProcessing: false
 			}).setView(coords);
 
 			// Set position of sun in sky
-			//world._environment._skybox.setInclination(0.3);
+			if(_skybox){ world._environment._skybox.setInclination(0.3) };
 
 			// Add controls
 			//VIZI.Controls.orbit().addTo(world);

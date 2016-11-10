@@ -11,7 +11,8 @@
 #' the map
 #' @export
 vizicitiesway <- function(location = NULL, mapControls = TRUE, buildings = TRUE,
-													width = NULL, height = NULL, elementId = NULL) {
+													sun = FALSE, width = NULL, height = NULL,
+													elementId = NULL) {
 
 
 	if(is.null(location))
@@ -28,7 +29,8 @@ vizicitiesway <- function(location = NULL, mapControls = TRUE, buildings = TRUE,
   	lat = location[1],
   	lng = location[2],
   	mapControls = mapControls,
-  	addBuildings = buildings
+  	addBuildings = buildings,
+  	sun = sun
   )
 
   # create widget
