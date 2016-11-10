@@ -3,13 +3,32 @@
 #' <Add Description>
 #'
 #' @import htmlwidgets
-#'
+#' @param location numeric vector of latitude/longitude (in that order)
+#' coordinates for the initial starting position of the map. If null, the map
+#'  will default to Melbourne, Australia.
+#' @param mapControls logical indicating if the map can be controlled.
+#' @param buildings logical indicating if 3D buildings should be rendered on
+#' the map
 #' @export
-vizicitiesway <- function(width = NULL, height = NULL, elementId = NULL) {
+vizicitiesway <- function(location = NULL, mapControls = TRUE, buildings = TRUE,
+													width = NULL, height = NULL, elementId = NULL) {
+
+
+	if(is.null(location))
+		location <- c(-37.9, 144.5)  ## Melbourne, Australia
+
+	if(!is.logical(mapControls))
+		stop("mapControls must be either TRUE or FALSE")
+
+	if(!is.logical(buildings))
+		stop("mapControls must be either TRUE or FALSE")
 
   # forward options using x
   x = list(
-    message = c(40.739940, -73.988801)
+  	lat = location[1],
+  	lng = location[2],
+  	mapControls = mapControls,
+  	addBuildings = buildings
   )
 
   # create widget
