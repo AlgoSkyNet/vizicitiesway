@@ -4,7 +4,18 @@
 \alias{vizicitiesway}
 \title{<Add Title>}
 \usage{
-vizicitiesway(width = NULL, height = NULL, elementId = NULL)
+vizicitiesway(location = NULL, mapControls = TRUE, buildings = TRUE,
+  sun = FALSE, width = NULL, height = NULL, elementId = NULL)
+}
+\arguments{
+\item{location}{numeric vector of latitude/longitude (in that order)
+coordinates for the initial starting position of the map. If null, the map
+ will default to Melbourne, Australia.}
+
+\item{mapControls}{logical indicating if the map can be controlled.}
+
+\item{buildings}{logical indicating if 3D buildings should be rendered on
+the map}
 }
 \description{
 <Add Description>
