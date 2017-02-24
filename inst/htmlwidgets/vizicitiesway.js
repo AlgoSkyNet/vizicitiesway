@@ -57,10 +57,10 @@ HTMLWidgets.widget({
 
 			    return {
 			      lineColor: colour,
-			      lineHeight: 20,
-			      lineWidth: 3,
+			      lineHeight: 200,
+			      lineWidth: 200,
 			      lineTransparent: true,
-			      lineOpacity: 0.5,
+			      lineOpacity: 1,
 			      lineBlending: THREE.AdditiveBlending,
 			      lineRenderOrder: 2
 			    };
@@ -72,9 +72,7 @@ HTMLWidgets.widget({
 			  },
 			  attribution: '&copy; Transport for London.'
 			}).addTo(world);
-
 */
-
       },
 
       resize: function(width, height) {
